@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Color Generator">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Hannes Jansen van Rensburg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <!-- Links -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <input type="color" value="#F55A5A" id="favcolor" name="favcolor" class="color-selector" aria-label="color picker">
+        <select id="scheme" name="scheme" class="scheme-selector" aria-label="scheme selector">
+            <option class="option" id="option-1">Monochrome</option>
+            <option class="option" id="option-2">Monochrome-dark</option>
+            <option class="option" id="option-3">Monochrome-light</option>
+            <option class="option" id="option-4">Analogic</option>
+            <option class="option" id="option-5">Complement</option>
+            <option class="option" id="option-6">Analogic-complement</option>
+            <option class="option" id="option-7">Triad</option>
+        </select>
+        <button type="submit" id="submit-btn" class="submit-btn">Get color scheme</button>
+    </nav>
+    <div class="colors-container">
+        <div id="color-1" class="color-container"></div>
+        <div id="color-2" class="color-container"></div>
+        <div id="color-3" class="color-container"></div>
+        <div id="color-4" class="color-container"></div>
+        <div id="color-5" class="color-container"></div>
+    </div>
+    <footer class="color-number-container">
+        <span class="color-values" id="color-value-1">#f55a5a</span>
+        <span class="color-values" id="color-value-2">#f55a5a</span>
+        <span class="color-values" id="color-value-3">#f55a5a</span>
+        <span class="color-values" id="color-value-4">#f55a5a</span>
+        <span class="color-values" id="color-value-5">#f55a5a</span>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
