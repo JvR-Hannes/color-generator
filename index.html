@@ -22,30 +22,18 @@
     <nav class="navbar" id="navbar">
         <input type="color" value="#F55A5A" id="favcolor" name="favcolor" class="color-selector" aria-label="color picker">
         <select id="scheme" name="scheme" class="scheme-selector" aria-label="scheme selector">
-            <option class="option" id="option-1">Monochrome</option>
-            <option class="option" id="option-2">Monochrome-dark</option>
-            <option class="option" id="option-3">Monochrome-light</option>
-            <option class="option" id="option-4">Analogic</option>
-            <option class="option" id="option-5">Complement</option>
-            <option class="option" id="option-6">Analogic-complement</option>
-            <option class="option" id="option-7">Triad</option>
+            <option class="option" id="option-1" value="monochrome">Monochrome</option>
+            <option class="option" id="option-2" value="monochrome-dark">Monochrome-dark</option>
+            <option class="option" id="option-3" value="monochrome-light">Monochrome-light</option>
+            <option class="option" id="option-4" value="analogic">Analogic</option>
+            <option class="option" id="option-5" value="complement">Complement</option>
+            <option class="option" id="option-6" value="analogic-complement">Analogic-complement</option>
+            <option class="option" id="option-7" value="triad">Triad</option>
         </select>
         <button type="submit" id="submit-btn" class="submit-btn">Get color scheme</button>
     </nav>
-    <div class="colors-container">
-        <div id="color-1" class="color-container"></div>
-        <div id="color-2" class="color-container"></div>
-        <div id="color-3" class="color-container"></div>
-        <div id="color-4" class="color-container"></div>
-        <div id="color-5" class="color-container"></div>
-    </div>
-    <footer class="color-number-container">
-        <span class="color-values" id="color-value-1">#f55a5a</span>
-        <span class="color-values" id="color-value-2">#f55a5a</span>
-        <span class="color-values" id="color-value-3">#f55a5a</span>
-        <span class="color-values" id="color-value-4">#f55a5a</span>
-        <span class="color-values" id="color-value-5">#f55a5a</span>
-    </footer>
+    <div class="colors-container" id="color-boxes"></div>
+    <footer class="color-number-container"></footer>
     <script src="index.js"></script>
 </body>
 
